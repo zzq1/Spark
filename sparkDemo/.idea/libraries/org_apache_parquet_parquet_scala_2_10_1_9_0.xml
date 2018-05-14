@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="org.apache.parquet:parquet-scala_2.10:1.9.0" type="repository">
+    <properties maven-id="org.apache.parquet:parquet-scala_2.10:1.9.0" />
+    <CLASSES>
+      <root url="jar://D:/repository/org/apache/parquet/parquet-scala_2.10/1.9.0/parquet-scala_2.10-1.9.0.jar!/" />
+      <root url="jar://D:/repository/org/apache/parquet/parquet-column/1.9.0/parquet-column-1.9.0.jar!/" />
+      <root url="jar://D:/repository/org/apache/parquet/parquet-common/1.9.0/parquet-common-1.9.0.jar!/" />
+      <root url="jar://D:/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar!/" />
+      <root url="jar://D:/repository/org/apache/parquet/parquet-encoding/1.9.0/parquet-encoding-1.9.0.jar!/" />
+      <root url="jar://D:/repository/commons-codec/commons-codec/1.5/commons-codec-1.5.jar!/" />
+      <root url="jar://D:/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

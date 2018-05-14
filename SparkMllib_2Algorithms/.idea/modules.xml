@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sparkmllib_2algorithms.iml" filepath="$PROJECT_DIR$/.idea/modules/sparkmllib_2algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sparkmllib_2algorithms-build.iml" filepath="$PROJECT_DIR$/.idea/modules/sparkmllib_2algorithms-build.iml" />
+    </modules>
+  </component>
+</project>

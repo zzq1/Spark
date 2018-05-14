@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="sparkml_4_2.10"
+		revision="1.0"
+		conf="provided"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170629114834"/>
+	<dependencies>
+		<module organisation="spark.jobserver" name="job-server-extras_2.10">
+			<revision name="0.7.0-SNAPSHOT" status="integration" pubdate="20170306184609" resolver="local" artresolver="local" homepage="https://github.com/spark-jobserver/spark-jobserver" downloaded="false" searched="true" default="false" conf="compile, default(compile)" position="8">
+				<license name="Apache-2.0" url="http://choosealicense.com/licenses/apache/"/>
+				<metadata-artifact status="no" details="" size="4690" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\spark.jobserver\job-server-extras_2.10\ivy-0.7.0-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="C:\Users\Administrator.thinkpad-PC\.ivy2\local\spark.jobserver\job-server-extras_2.10\0.7.0-SNAPSHOT\ivys\ivy.xml"/>
+				<caller organisation="default" name="sparkml_4_2.10" conf="provided" rev="0.7.0-SNAPSHOT" rev-constraint-default="0.7.0-SNAPSHOT" rev-constraint-dynamic="0.7.0-SNAPSHOT" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="job-server-extras_2.10" type="jar" ext="jar" status="no" details="" size="130592" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\local\spark.jobserver\job-server-extras_2.10\0.7.0-SNAPSHOT\jars\job-server-extras_2.10.jar">
+						<origin-location is-local="true" location="C:\Users\Administrator.thinkpad-PC\.ivy2\local\spark.jobserver\job-server-extras_2.10\0.7.0-SNAPSHOT\jars\job-server-extras_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="spark.jobserver" name="job-server_2.10">
+			<revision name="0.7.0-SNAPSHOT" status="integration" pubdate="20170306184604" resolver="local" artresolver="local" homepage="https://github.com/spark-jobserver/spark-jobserver" downloaded="false" searched="true" default="false" conf="compile" position="9">
+				<license name="Apache-2.0" url="http://choosealicense.com/licenses/apache/"/>
+				<metadata-artifact status="no" details="" size="4473" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\spark.jobserver\job-server_2.10\ivy-0.7.0-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="C:\Users\Administrator.thinkpad-PC\.ivy2\local\spark.jobserver\job-server_2.10\0.7.0-SNAPSHOT\ivys\ivy.xml"/>
+				<caller organisation="spark.jobserver" name="job-server-extras_2.10" conf="compile" rev="0.7.0-SNAPSHOT" rev-constraint-default="0.7.0-SNAPSHOT" rev-constraint-dynamic="0.7.0-SNAPSHOT" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="job-server_2.10" type="jar" ext="jar" status="no" details="" size="1025212" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\local\spark.jobserver\job-server_2.10\0.7.0-SNAPSHOT\jars\job-server_2.10.jar">
+						<origin-location is-local="true" location="C:\Users\Administrator.thinkpad-PC\.ivy2\local\spark.jobserver\job-server_2.10\0.7.0-SNAPSHOT\jars\job-server_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.shiro" name="shiro-core">
+			<revision name="1.2.4" status="release" pubdate="20150708121206" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="49">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="17352" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.apache.shiro\shiro-core\ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.2.4/shiro-core-1.2.4.pom"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="shiro-core" type="bundle" ext="jar" status="no" details="" size="379541" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.apache.shiro\shiro-core\bundles\shiro-core-1.2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/shiro/shiro-core/1.2.4/shiro-core-1.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-beanutils" name="commons-beanutils">
+			<revision name="1.8.3" status="release" pubdate="20100325011600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/beanutils/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<metadata-artifact status="no" details="" size="6476" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\commons-beanutils\commons-beanutils\ivy-1.8.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.pom"/>
+				<caller organisation="org.apache.shiro" name="shiro-core" conf="default, compile, runtime, master" rev="1.8.3" rev-constraint-default="1.8.3" rev-constraint-dynamic="1.8.3" callerrev="1.2.4"/>
+				<artifacts>
+					<artifact name="commons-beanutils" type="jar" ext="jar" status="no" details="" size="232019" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\commons-beanutils\commons-beanutils\jars\commons-beanutils-1.8.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.datastax.cassandra" name="cassandra-driver-mapping">
+			<revision name="3.0.3" status="release" pubdate="20160714050903" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/datastax/java-driver" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="48">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6833" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.datastax.cassandra\cassandra-driver-mapping\ivy-3.0.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/datastax/cassandra/cassandra-driver-mapping/3.0.3/cassandra-driver-mapping-3.0.3.pom"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="3.0.3" rev-constraint-default="3.0.3" rev-constraint-dynamic="3.0.3" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="cassandra-driver-mapping" type="bundle" ext="jar" status="no" details="" size="92330" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.datastax.cassandra\cassandra-driver-mapping\bundles\cassandra-driver-mapping-3.0.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/datastax/cassandra/cassandra-driver-mapping/3.0.3/cassandra-driver-mapping-3.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.datastax.cassandra" name="cassandra-driver-core">
+			<revision name="3.0.3" status="release" pubdate="20160714050849" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/datastax/java-driver" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="40">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7829" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.datastax.cassandra\cassandra-driver-core\ivy-3.0.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/datastax/cassandra/cassandra-driver-core/3.0.3/cassandra-driver-core-3.0.3.pom"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-mapping" conf="default, compile, runtime, master" rev="3.0.3" rev-constraint-default="3.0.3" rev-constraint-dynamic="3.0.3" callerrev="3.0.3"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="3.0.3" rev-constraint-default="3.0.3" rev-constraint-dynamic="3.0.3" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="cassandra-driver-core" type="jar" ext="jar" status="no" details="" size="1005765" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.datastax.cassandra\cassandra-driver-core\jars\cassandra-driver-core-3.0.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/datastax/cassandra/cassandra-driver-core/3.0.3/cassandra-driver-core-3.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.dropwizard.metrics" name="metrics-core">
+			<revision name="3.1.2" status="release" pubdate="20150426115901" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<metadata-artifact status="no" details="" size="5039" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.dropwizard.metrics\metrics-core\ivy-3.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.pom"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-core" conf="default, compile, runtime, master" rev="3.1.2" rev-constraint-default="3.1.2" rev-constraint-dynamic="3.1.2" callerrev="3.0.3"/>
+				<artifacts>
+					<artifact name="metrics-core" type="bundle" ext="jar" status="no" details="" size="112558" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.dropwizard.metrics\metrics-core\bundles\metrics-core-3.1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="16.0.1" status="release" pubdate="20140204064528" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+				<metadata-artifact status="no" details="" size="5991" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.google.guava\guava\ivy-16.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-core" conf="default, compile, runtime, master" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="3.0.3"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2228009" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.flywaydb" name="flyway-core">
+			<revision name="3.2.1" status="release" pubdate="20150320225350" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="39">
+				<license name="Apache License, Version 2.0" url="https://github.com/flyway/flyway/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="13193" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.flywaydb\flyway-core\ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/flywaydb/flyway-core/3.2.1/flyway-core-3.2.1.pom"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="flyway-core" type="jar" ext="jar" status="no" details="" size="292011" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.flywaydb\flyway-core\jars\flyway-core-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/flywaydb/flyway-core/3.2.1/flyway-core-3.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-dbcp" name="commons-dbcp">
+			<revision name="1.4" status="release" pubdate="20100208015626" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/dbcp/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="37">
+				<metadata-artifact status="no" details="" size="5755" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\commons-dbcp\commons-dbcp\ivy-1.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.pom"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-dbcp" type="jar" ext="jar" status="no" details="" size="160519" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\commons-dbcp\commons-dbcp\jars\commons-dbcp-1.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-pool" name="commons-pool">
+			<revision name="1.5.4" status="release" pubdate="20091113094653" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/pool/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<metadata-artifact status="no" details="" size="4940" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\commons-pool\commons-pool\ivy-1.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom"/>
+				<caller organisation="commons-dbcp" name="commons-dbcp" conf="default, compile, runtime, master" rev="1.5.4" rev-constraint-default="1.5.4" rev-constraint-dynamic="1.5.4" callerrev="1.4"/>
+				<artifacts>
+					<artifact name="commons-pool" type="jar" ext="jar" status="no" details="" size="96221" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\commons-pool\commons-pool\jars\commons-pool-1.5.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.postgresql" name="postgresql">
+			<revision name="9.4.1209" status="release" pubdate="20160715210352" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/pgjdbc/pgjdbc" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="36">
+				<license name="The PostgreSQL License" url="http://www.postgresql.org/about/licence/"/>
+				<metadata-artifact status="no" details="" size="5505" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.postgresql\postgresql\ivy-9.4.1209.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/postgresql/postgresql/9.4.1209/postgresql-9.4.1209.pom"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="9.4.1209" rev-constraint-default="9.4.1209" rev-constraint-dynamic="9.4.1209" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="postgresql" type="bundle" ext="jar" status="no" details="" size="689278" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.postgresql\postgresql\bundles\postgresql-9.4.1209.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/postgresql/postgresql/9.4.1209/postgresql-9.4.1209.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.h2database" name="h2">
+			<revision name="1.3.176" status="release" pubdate="20140405205937" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.h2database.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="35">
+				<license name="The H2 License, Version 1.0" url="http://h2database.com/html/license.html"/>
+				<metadata-artifact status="no" details="" size="2463" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.h2database\h2\ivy-1.3.176.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/h2database/h2/1.3.176/h2-1.3.176.pom"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="1.3.176" rev-constraint-default="1.3.176" rev-constraint-dynamic="1.3.176" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="h2" type="jar" ext="jar" status="no" details="" size="1659879" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.h2database\h2\jars\h2-1.3.176.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.slick" name="slick_2.10">
+			<revision name="3.1.1" status="release" pubdate="20151216041247" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="32">
+				<license name="Two-clause BSD-style license" url="http://github.com/slick/slick/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3130" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.typesafe.slick\slick_2.10\ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/slick/slick_2.10/3.1.1/slick_2.10-3.1.1.pom"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="slick_2.10" type="bundle" ext="jar" status="no" details="" size="4791598" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.typesafe.slick\slick_2.10\bundles\slick_2.10-3.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/slick/slick_2.10/3.1.1/slick_2.10-3.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.reactivestreams" name="reactive-streams">
+			<revision name="1.0.0" status="release" pubdate="20150430001454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
+				<metadata-artifact status="no" details="" size="2523" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.reactivestreams\reactive-streams\ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.pom"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.10" conf="default, compile, runtime, master" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="3.1.1"/>
+				<artifacts>
+					<artifact name="reactive-streams" type="jar" ext="jar" status="no" details="" size="2042" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.reactivestreams\reactive-streams\jars\reactive-streams-1.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.10" status="release" pubdate="20150107041107" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, master(*)" position="33">
+				<metadata-artifact status="no" details="" size="4714" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom"/>
+				<caller organisation="io.dropwizard.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="3.1.2"/>
+				<caller organisation="org.apache.shiro" name="shiro-core" conf="default, compile, runtime, master" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="1.2.4"/>
+				<caller organisation="com.yammer.metrics" name="metrics-core" conf="default, compile, runtime, master" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.2.0"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.10" conf="default, compile, runtime, master" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="3.1.1"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="32119" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.2" status="release" pubdate="20121012025524" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="4520" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom"/>
+				<evicted-by rev="1.7.10"/>
+				<caller organisation="com.yammer.metrics" name="metrics-core" conf="default, compile, runtime, master" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.2.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.6.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.10"/>
+				<caller organisation="org.apache.shiro" name="shiro-core" conf="default, compile, runtime, master" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.4" callerrev="1.2.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.10"/>
+				<caller organisation="io.dropwizard.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="3.1.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="spark.jobserver" name="akka-app_2.10">
+			<revision name="0.7.0-SNAPSHOT" status="integration" pubdate="20170306184603" resolver="local" artresolver="local" homepage="https://github.com/spark-jobserver/spark-jobserver" downloaded="false" searched="true" default="false" conf="compile, default(compile)" position="10">
+				<license name="Apache-2.0" url="http://choosealicense.com/licenses/apache/"/>
+				<metadata-artifact status="no" details="" size="4353" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\spark.jobserver\akka-app_2.10\ivy-0.7.0-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="C:\Users\Administrator.thinkpad-PC\.ivy2\local\spark.jobserver\akka-app_2.10\0.7.0-SNAPSHOT\ivys\ivy.xml"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="0.7.0-SNAPSHOT" rev-constraint-default="0.7.0-SNAPSHOT" rev-constraint-dynamic="0.7.0-SNAPSHOT" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="akka-app_2.10" type="jar" ext="jar" status="no" details="" size="83296" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\local\spark.jobserver\akka-app_2.10\0.7.0-SNAPSHOT\jars\akka-app_2.10.jar">
+						<origin-location is-local="true" location="C:\Users\Administrator.thinkpad-PC\.ivy2\local\spark.jobserver\akka-app_2.10\0.7.0-SNAPSHOT\jars\akka-app_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.yammer.metrics" name="metrics-core">
+			<revision name="2.2.0" status="release" pubdate="20121127041109" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="31">
+				<metadata-artifact status="no" details="" size="4104" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.yammer.metrics\metrics-core\ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.pom"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="metrics-core" type="jar" ext="jar" status="no" details="" size="82123" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.yammer.metrics\metrics-core\jars\metrics-core-2.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-client_2.10">
+			<revision name="1.3.3" status="release" pubdate="20150324215214" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="30">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3699" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-client_2.10\ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-client_2.10/1.3.3/spray-client_2.10-1.3.3.pom"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="spray-client_2.10" type="bundle" ext="jar" status="no" details="" size="45071" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-client_2.10\bundles\spray-client_2.10-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-client_2.10/1.3.3/spray-client_2.10-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-routing_2.10">
+			<revision name="1.3.3" status="release" pubdate="20150324214846" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="26">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3663" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-routing_2.10\ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-routing_2.10/1.3.3/spray-routing_2.10-1.3.3.pom"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="spray-routing_2.10" type="bundle" ext="jar" status="no" details="" size="1095810" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-routing_2.10\bundles\spray-routing_2.10-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-routing_2.10/1.3.3/spray-routing_2.10-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.chuusai" name="shapeless_2.10">
+			<revision name="1.2.4" status="release" pubdate="20130227035121" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="Apache License" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="2667" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.chuusai\shapeless_2.10\ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/chuusai/shapeless_2.10/1.2.4/shapeless_2.10-1.2.4.pom"/>
+				<caller organisation="io.spray" name="spray-routing_2.10" conf="default, compile, runtime, master" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="shapeless_2.10" type="jar" ext="jar" status="no" details="" size="1280423" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.chuusai\shapeless_2.10\jars\shapeless_2.10-1.2.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/chuusai/shapeless_2.10/1.2.4/shapeless_2.10-1.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-httpx_2.10">
+			<revision name="1.3.3" status="release" pubdate="20150324215127" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4398" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-httpx_2.10\ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-httpx_2.10/1.3.3/spray-httpx_2.10-1.3.3.pom"/>
+				<caller organisation="io.spray" name="spray-client_2.10" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-routing_2.10" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-httpx_2.10" type="bundle" ext="jar" status="no" details="" size="463821" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-httpx_2.10\bundles\spray-httpx_2.10-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-httpx_2.10/1.3.3/spray-httpx_2.10-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jvnet.mimepull" name="mimepull">
+			<revision name="1.9.5" status="release" pubdate="20150313191011" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://mimepull.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="CDDL 1.1" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="3865" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.jvnet.mimepull\mimepull\ivy-1.9.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.5/mimepull-1.9.5.pom"/>
+				<caller organisation="io.spray" name="spray-httpx_2.10" conf="compile, runtime" rev="1.9.5" rev-constraint-default="1.9.5" rev-constraint-dynamic="1.9.5" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="mimepull" type="jar" ext="jar" status="no" details="" size="63621" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.jvnet.mimepull\mimepull\jars\mimepull-1.9.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.5/mimepull-1.9.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-caching_2.10">
+			<revision name="1.3.3" status="release" pubdate="20150324215154" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="24">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3329" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-caching_2.10\ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-caching_2.10/1.3.3/spray-caching_2.10-1.3.3.pom"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="spray-caching_2.10" type="bundle" ext="jar" status="no" details="" size="29821" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-caching_2.10\bundles\spray-caching_2.10-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-caching_2.10/1.3.3/spray-caching_2.10-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.concurrentlinkedhashmap" name="concurrentlinkedhashmap-lru">
+			<revision name="1.4.2" status="release" pubdate="20150128093055" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/concurrentlinkedhashmap" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5220" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.googlecode.concurrentlinkedhashmap\concurrentlinkedhashmap-lru\ivy-1.4.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.4.2/concurrentlinkedhashmap-lru-1.4.2.pom"/>
+				<caller organisation="io.spray" name="spray-caching_2.10" conf="default, compile, runtime, master" rev="1.4.2" rev-constraint-default="1.4.2" rev-constraint-dynamic="1.4.2" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="concurrentlinkedhashmap-lru" type="jar" ext="jar" status="no" details="" size="116565" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.googlecode.concurrentlinkedhashmap\concurrentlinkedhashmap-lru\jars\concurrentlinkedhashmap-lru-1.4.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.4.2/concurrentlinkedhashmap-lru-1.4.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-can_2.10">
+			<revision name="1.3.3" status="release" pubdate="20150324214751" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="18">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3461" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-can_2.10\ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-can_2.10/1.3.3/spray-can_2.10-1.3.3.pom"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="io.spray" name="spray-client_2.10" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-can_2.10" type="bundle" ext="jar" status="no" details="" size="735272" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-can_2.10\bundles\spray-can_2.10-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-can_2.10/1.3.3/spray-can_2.10-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-io_2.10">
+			<revision name="1.3.3" status="release" pubdate="20150324215238" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3220" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-io_2.10\ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-io_2.10/1.3.3/spray-io_2.10-1.3.3.pom"/>
+				<caller organisation="io.spray" name="spray-can_2.10" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-io_2.10" type="bundle" ext="jar" status="no" details="" size="196676" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-io_2.10\bundles\spray-io_2.10-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-io_2.10/1.3.3/spray-io_2.10-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-http_2.10">
+			<revision name="1.3.3" status="release" pubdate="20150324215039" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3201" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-http_2.10\ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-http_2.10/1.3.3/spray-http_2.10-1.3.3.pom"/>
+				<caller organisation="io.spray" name="spray-httpx_2.10" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-can_2.10" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-io_2.10" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-client_2.10" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-routing_2.10" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-http_2.10" type="bundle" ext="jar" status="no" details="" size="1525222" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-http_2.10\bundles\spray-http_2.10-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-http_2.10/1.3.3/spray-http_2.10-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-scala_2.10">
+			<revision name="1.1.7" status="release" pubdate="20150210001123" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3003" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.parboiled\parboiled-scala_2.10\ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/parboiled/parboiled-scala_2.10/1.1.7/parboiled-scala_2.10-1.1.7.pom"/>
+				<caller organisation="io.spray" name="spray-http_2.10" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="parboiled-scala_2.10" type="jar" ext="jar" status="no" details="" size="237145" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.parboiled\parboiled-scala_2.10\jars\parboiled-scala_2.10-1.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/parboiled/parboiled-scala_2.10/1.1.7/parboiled-scala_2.10-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-core">
+			<revision name="1.1.7" status="release" pubdate="20150210001230" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2696" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.parboiled\parboiled-core\ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.7/parboiled-core-1.1.7.pom"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.10" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.1.7"/>
+				<artifacts>
+					<artifact name="parboiled-core" type="jar" ext="jar" status="no" details="" size="186607" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.parboiled\parboiled-core\jars\parboiled-core-1.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.7/parboiled-core-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-util_2.10">
+			<revision name="1.3.3" status="release" pubdate="20150324214817" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3188" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-util_2.10\ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-util_2.10/1.3.3/spray-util_2.10-1.3.3.pom"/>
+				<caller organisation="io.spray" name="spray-http_2.10" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-httpx_2.10" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-can_2.10" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-io_2.10" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-client_2.10" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-caching_2.10" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-routing_2.10" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-util_2.10" type="bundle" ext="jar" status="no" details="" size="129242" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-util_2.10\bundles\spray-util_2.10-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-util_2.10/1.3.3/spray-util_2.10-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-json_2.10">
+			<revision name="1.3.2" status="release" pubdate="20150506220102" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3083" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-json_2.10\ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.pom"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="spray-json_2.10" type="bundle" ext="jar" status="no" details="" size="289719" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.spray\spray-json_2.10\bundles\spray-json_2.10-1.3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-cluster_2.10">
+			<revision name="2.3.15" status="release" pubdate="20160401143926" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3310" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.typesafe.akka\akka-cluster_2.10\ivy-2.3.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-cluster_2.10/2.3.15/akka-cluster_2.10-2.3.15.pom"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="2.3.15" rev-constraint-default="2.3.15" rev-constraint-dynamic="2.3.15" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="akka-cluster_2.10" type="jar" ext="jar" status="no" details="" size="1075401" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.typesafe.akka\akka-cluster_2.10\jars\akka-cluster_2.10-2.3.15.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-remote_2.10">
+			<revision name="2.3.15" status="release" pubdate="20160401143727" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3952" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.typesafe.akka\akka-remote_2.10\ivy-2.3.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.3.15/akka-remote_2.10-2.3.15.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-cluster_2.10" conf="default, compile, runtime, master" rev="2.3.15" rev-constraint-default="2.3.15" rev-constraint-dynamic="2.3.15" callerrev="2.3.15"/>
+				<artifacts>
+					<artifact name="akka-remote_2.10" type="jar" ext="jar" status="no" details="" size="1371289" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.typesafe.akka\akka-remote_2.10\jars\akka-remote_2.10-2.3.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.3.15/akka-remote_2.10-2.3.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.uncommons.maths" name="uncommons-maths">
+			<revision name="1.2.2a" status="release" pubdate="20110408215605" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maths.uncommons.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2771" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.uncommons.maths\uncommons-maths\ivy-1.2.2a.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="compile, runtime" rev="1.2.2a" rev-constraint-default="1.2.2a" rev-constraint-dynamic="1.2.2a" callerrev="2.3.15"/>
+				<artifacts>
+					<artifact name="uncommons-maths" type="jar" ext="jar" status="no" details="" size="49019" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.uncommons.maths\uncommons-maths\jars\uncommons-maths-1.2.2a.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.8.0.Final" status="release" pubdate="20131107172312" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="6485" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty\ivy-3.8.0.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="compile, runtime" rev="3.8.0.Final" rev-constraint-default="3.8.0.Final" rev-constraint-dynamic="3.8.0.Final" callerrev="2.3.15"/>
+				<artifacts>
+					<artifact name="netty" type="bundle" ext="jar" status="no" details="" size="1230201" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty\bundles\netty-3.8.0.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.10">
+			<revision name="2.3.15" status="release" pubdate="20160401143538" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2793" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\ivy-2.3.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.3.15/akka-actor_2.10-2.3.15.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="compile, runtime" rev="2.3.15" rev-constraint-default="2.3.15" rev-constraint-dynamic="2.3.15" callerrev="2.3.15"/>
+				<artifacts>
+					<artifact name="akka-actor_2.10" type="jar" ext="jar" status="no" details="" size="2819210" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.3.15.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="spark.jobserver" name="job-server-api_2.10">
+			<revision name="0.7.0-SNAPSHOT" status="integration" pubdate="20170306184603" resolver="local" artresolver="local" homepage="https://github.com/spark-jobserver/spark-jobserver" downloaded="false" searched="true" default="false" conf="compile, default(compile)" position="0">
+				<license name="Apache-2.0" url="http://choosealicense.com/licenses/apache/"/>
+				<metadata-artifact status="no" details="" size="3064" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\spark.jobserver\job-server-api_2.10\ivy-0.7.0-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="C:\Users\Administrator.thinkpad-PC\.ivy2\local\spark.jobserver\job-server-api_2.10\0.7.0-SNAPSHOT\ivys\ivy.xml"/>
+				<caller organisation="spark.jobserver" name="job-server-extras_2.10" conf="compile" rev="0.7.0-SNAPSHOT" rev-constraint-default="0.7.0-SNAPSHOT" rev-constraint-dynamic="0.7.0-SNAPSHOT" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="0.7.0-SNAPSHOT" rev-constraint-default="0.7.0-SNAPSHOT" rev-constraint-dynamic="0.7.0-SNAPSHOT" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="default" name="sparkml_4_2.10" conf="provided" rev="0.7.0-SNAPSHOT" rev-constraint-default="0.7.0-SNAPSHOT" rev-constraint-dynamic="0.7.0-SNAPSHOT" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="job-server-api_2.10" type="jar" ext="jar" status="no" details="" size="117391" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\local\spark.jobserver\job-server-api_2.10\0.7.0-SNAPSHOT\jars\job-server-api_2.10.jar">
+						<origin-location is-local="true" location="C:\Users\Administrator.thinkpad-PC\.ivy2\local\spark.jobserver\job-server-api_2.10\0.7.0-SNAPSHOT\jars\job-server-api_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.2.1" status="release" pubdate="20140502225416" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="7">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2768" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.typesafe\config\ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server-api_2.10" conf="compile" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server-extras_2.10" conf="compile" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.10" conf="compile, runtime" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.15"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.10" conf="default, compile, runtime, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="3.1.1"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="219554" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.9.3" status="release" pubdate="20160328033531" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6595" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\joda-time\joda-time\ivy-2.9.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.3/joda-time-2.9.3.pom"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="2.9.3" rev-constraint-default="2.9.3" rev-constraint-dynamic="2.9.3" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server-api_2.10" conf="compile" rev="2.9.3" rev-constraint-default="2.9.3" rev-constraint-dynamic="2.9.3" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server-extras_2.10" conf="compile" rev="2.9.3" rev-constraint-default="2.9.3" rev-constraint-dynamic="2.9.3" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="2.9.3" rev-constraint-default="2.9.3" rev-constraint-dynamic="2.9.3" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="627814" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.9.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.3/joda-time-2.9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.joda" name="joda-convert">
+			<revision name="1.8.1" status="release" pubdate="20151002185804" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-convert/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6376" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.joda\joda-convert\ivy-1.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.8.1/joda-convert-1.8.1.pom"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server-api_2.10" conf="compile" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server-extras_2.10" conf="compile" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="joda-convert" type="jar" ext="jar" status="no" details="" size="111521" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.8.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.8.1/joda-convert-1.8.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalactic" name="scalactic_2.10">
+			<revision name="2.2.6" status="release" pubdate="20160106025928" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3090" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.scalactic\scalactic_2.10\ivy-2.2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.10/2.2.6/scalactic_2.10-2.2.6.pom"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="2.2.6" rev-constraint-default="2.2.6" rev-constraint-dynamic="2.2.6" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server-api_2.10" conf="compile" rev="2.2.6" rev-constraint-default="2.2.6" rev-constraint-dynamic="2.2.6" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server-extras_2.10" conf="compile" rev="2.2.6" rev-constraint-default="2.2.6" rev-constraint-dynamic="2.2.6" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="2.2.6" rev-constraint-default="2.2.6" rev-constraint-dynamic="2.2.6" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalactic_2.10" type="bundle" ext="jar" status="no" details="" size="420795" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.scalactic\scalactic_2.10\bundles\scalactic_2.10-2.2.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.10/2.2.6/scalactic_2.10-2.2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.6" status="release" pubdate="20150918173538" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2870" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.6/scala-reflect-2.10.6.pom"/>
+				<caller organisation="org.scalactic" name="scalactic_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.2.6"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3206180" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.10.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.6/scala-reflect-2.10.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-all">
+			<revision name="4.0.37.Final" status="release" pubdate="20160608023922" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<metadata-artifact status="no" details="" size="19985" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty-all\ivy-4.0.37.Final.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/netty/netty-all/4.0.37.Final/netty-all-4.0.37.Final.pom"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server-api_2.10" conf="compile" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server-extras_2.10" conf="compile" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="0.7.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="netty-all" type="jar" ext="jar" status="no" details="" size="2204062" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty-all\jars\netty-all-4.0.37.Final.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/netty/netty-all/4.0.37.Final/netty-all-4.0.37.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-handler">
+			<revision name="4.0.37.Final" status="release" pubdate="20160608021239" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<metadata-artifact status="no" details="" size="17769" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty-handler\ivy-4.0.37.Final.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/netty/netty-handler/4.0.37.Final/netty-handler-4.0.37.Final.pom"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-core" conf="default, compile, runtime, master" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="3.0.3"/>
+				<artifacts>
+					<artifact name="netty-handler" type="jar" ext="jar" status="no" details="" size="275502" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty-handler\jars\netty-handler-4.0.37.Final.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/netty/netty-handler/4.0.37.Final/netty-handler-4.0.37.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-codec">
+			<revision name="4.0.37.Final" status="release" pubdate="20160608021122" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<metadata-artifact status="no" details="" size="17444" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty-codec\ivy-4.0.37.Final.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/netty/netty-codec/4.0.37.Final/netty-codec-4.0.37.Final.pom"/>
+				<caller organisation="io.netty" name="netty-handler" conf="compile, runtime" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="4.0.37.Final"/>
+				<artifacts>
+					<artifact name="netty-codec" type="jar" ext="jar" status="no" details="" size="148470" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty-codec\jars\netty-codec-4.0.37.Final.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/netty/netty-codec/4.0.37.Final/netty-codec-4.0.37.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.protobuf" name="protobuf-java">
+			<revision name="2.5.0" status="release" pubdate="20130308081811" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/protobuf" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="3030" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.google.protobuf\protobuf-java\ivy-2.5.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="compile, runtime" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="2.3.15"/>
+				<artifacts>
+					<artifact name="protobuf-java" type="bundle" ext="jar" status="no" details="" size="533455" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\com.google.protobuf\protobuf-java\bundles\protobuf-java-2.5.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-transport">
+			<revision name="4.0.37.Final" status="release" pubdate="20160608021047" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<metadata-artifact status="no" details="" size="16766" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty-transport\ivy-4.0.37.Final.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/netty/netty-transport/4.0.37.Final/netty-transport-4.0.37.Final.pom"/>
+				<caller organisation="io.netty" name="netty-codec" conf="compile, runtime" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="4.0.37.Final"/>
+				<caller organisation="io.netty" name="netty-handler" conf="compile, runtime" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="4.0.37.Final"/>
+				<artifacts>
+					<artifact name="netty-transport" type="jar" ext="jar" status="no" details="" size="365994" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty-transport\jars\netty-transport-4.0.37.Final.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/netty/netty-transport/4.0.37.Final/netty-transport-4.0.37.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-buffer">
+			<revision name="4.0.37.Final" status="release" pubdate="20160608020927" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<metadata-artifact status="no" details="" size="16760" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty-buffer\ivy-4.0.37.Final.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/netty/netty-buffer/4.0.37.Final/netty-buffer-4.0.37.Final.pom"/>
+				<caller organisation="io.netty" name="netty-transport" conf="compile, runtime" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="4.0.37.Final"/>
+				<caller organisation="io.netty" name="netty-handler" conf="compile, runtime" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="4.0.37.Final"/>
+				<artifacts>
+					<artifact name="netty-buffer" type="jar" ext="jar" status="no" details="" size="219107" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty-buffer\jars\netty-buffer-4.0.37.Final.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/netty/netty-buffer/4.0.37.Final/netty-buffer-4.0.37.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty-common">
+			<revision name="4.0.37.Final" status="release" pubdate="20160608020753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<metadata-artifact status="no" details="" size="15327" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty-common\ivy-4.0.37.Final.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/netty/netty-common/4.0.37.Final/netty-common-4.0.37.Final.pom"/>
+				<caller organisation="io.netty" name="netty-buffer" conf="compile, runtime" rev="4.0.37.Final" rev-constraint-default="4.0.37.Final" rev-constraint-dynamic="4.0.37.Final" callerrev="4.0.37.Final"/>
+				<artifacts>
+					<artifact name="netty-common" type="jar" ext="jar" status="no" details="" size="472085" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\io.netty\netty-common\jars\netty-common-4.0.37.Final.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/netty/netty-common/4.0.37.Final/netty-common-4.0.37.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.6" status="release" pubdate="20150918173528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="1">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2701" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.scala-lang\scala-library\ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.pom"/>
+				<caller organisation="io.spray" name="spray-httpx_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.3.3"/>
+				<caller organisation="spark.jobserver" name="job-server-extras_2.10" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="io.spray" name="spray-can_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-io_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.3.3"/>
+				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.3.15"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.3.15"/>
+				<caller organisation="org.scalactic" name="scalactic_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.2.6"/>
+				<caller organisation="io.spray" name="spray-client_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-http_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.3.3"/>
+				<caller organisation="spark.jobserver" name="akka-app_2.10" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server-api_2.10" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="spark.jobserver" name="job-server_2.10" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.7.0-SNAPSHOT"/>
+				<caller organisation="com.typesafe.akka" name="akka-cluster_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.3.15"/>
+				<caller organisation="com.chuusai" name="shapeless_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.2.4"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.10.6"/>
+				<caller organisation="io.spray" name="spray-util_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.3.3"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.1.7"/>
+				<caller organisation="io.spray" name="spray-caching_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-routing_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-json_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.3.2"/>
+				<caller organisation="com.typesafe.slick" name="slick_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="3.1.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7132001" time="0" location="C:\Users\Administrator.thinkpad-PC\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

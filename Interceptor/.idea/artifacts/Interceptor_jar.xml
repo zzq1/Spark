@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Interceptor:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Interceptor_jar</output-path>
+    <root id="archive" name="Interceptor.jar">
+      <element id="module-output" name="Interceptor" />
+    </root>
+  </artifact>
+</component>
